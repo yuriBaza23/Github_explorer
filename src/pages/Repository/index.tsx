@@ -50,14 +50,14 @@ const Repository: React.FC = () => {
   return (
     <>
       <Header>
-        <img src={logoImg} alt='Github Explorer'/>
+        <img src={logoImg} alt='Github Explorer' />
         <Link to='/'>
-          <FiChevronLeft size={16}/>
+          <FiChevronLeft size={16} />
           Voltar
         </Link>
       </Header>
 
-      { repository && (
+      {repository && (
         <RepositoryInfo>
           <header>
             <img
@@ -84,7 +84,7 @@ const Repository: React.FC = () => {
             </li>
           </ul>
         </RepositoryInfo>
-      ) }
+      )}
 
       <Issues>
         {issues.map((issues) => (
@@ -93,7 +93,7 @@ const Repository: React.FC = () => {
               <strong>{issues.title}</strong>
               <p>{issues.user.login}</p>
             </div>
-            <FiChevronRight size={20}/>
+            <FiChevronRight size={20} />
           </a>
         ))}
       </Issues>
